@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Pagamento</title>
+
+    <style>
+
+        @font-face {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            src: url();
+        }
+        body {
+            font: 400 18px Georgia, 'Times New Roman', Times, serif ;
+            max-width: 100vw;
+            background: #E1E6E9;
+        }
+
+        p {
+            max-width: 350px;
+            margin: auto;
+            padding: 20px 10px;
+            line-height: 1.5;
+        }
+
+        p#alerta {
+
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.5;
+
+        }
+
+        h1 {
+            max-width: 260px;
+            font-size: 22px;
+            font-weight: 300;
+            padding: 20px 10px;
+            margin: auto;
+        }
+        main, footer {
+
+            max-width: 500px;
+            margin: auto;
+            background: #fafafa;
+            padding: 10px;
+        }
+        header {
+
+            text-align: center;
+        }
+
+        .img-logo {
+            width:50px;
+            margin-left: -1px;
+            background:#8b008b;
+            border-radius: 100%;
+        }
+
+        .info-pedido, .info-envio {
+
+            width: 80%;
+            background: #ffff;
+            padding: 10px;
+            box-shadow: 2px 4px 12px -4px rgb(18 17 18 / 37%);
+            border-radius: 5px;
+            border-bottom: 2px solid #8b008b;
+            margin: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <img class="img-logo" src="https://uploaddeimagens.com.br/images/004/642/642/full/Design_sem_nome_%282%29.png" alt="">
+            <h1> <strong>{nome},</strong>
+                Seu pagamento foi aprovado. A ComprarBM.com Agradece a compra!</h1>
+        
+        </header>
+        <div class="container-texto">
+        <div class="info-pedido">
+            <h3> Dados de sua compra</h3>
+            <hr>
+            <strong>Nome:</strong>{nome}
+            <br><br>
+            <strong>Email:</strong> {email}
+            <br><br>
+            <strong>Link para download do perfil:</strong> {link_download}
+            <br><br>
+            <strong>Tutorial para logar no perfil:</strong> https://www.veed.io/view/871bbb53-9e33-4f5c-860a-1d74323f4c94?panel=share
+            <br><br>
+            <strong>Se não conseguir abrir o arquivo:</strong> https://www.youtube.com/watch?v=sv_beTLWMUE
+            <br><br>
+            <strong>Esteira de aquecimento:</strong> https://drive.google.com/file/d/1cfuGZ8ePND2CWMJWPU3nVOVDYoSj_E7o/view?usp=share_link
+            <br><br>
+            <strong>Verifique as informações abaixo e caso precise de ajuda entre em contato com nosso suporte pelo whatsapp:</strong> <span style="color: #8b008b;"><strong><a href="https://wa.link/gsz42a:">Chamar no Whatsapp</a></strong></h1></span>
+            
+        </div>
+        <br>
+        </div>
+
+    </main>
+    <footer style="text-align:center;">
+        <div class="info-rodape">
+            <p> ComprarBM - Contingência Facebook; Inc 2024.</p>
+            <p><a href="#"> Cancelar Inscrição</a></p>
+        </div>
+    </footer>
+</body>
+</html>

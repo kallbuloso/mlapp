@@ -1,0 +1,6 @@
+*Nome*: {{nome}}
+*E-mail*: {{email}}
+*Whatsapp/Tel*: {{telefone}}
+*Data de nascimento*: {{data_nasc}}
+*Hora de nascimento*: {{hora_nasc}}
+*Cidade/UF*: {{city_uf}}

@@ -1,0 +1,80 @@
+<div id="offer-bar" style="position: fixed;top: 0;left: 0;right: 0;background-color: rgb(73 33 211 / 80%);padding: 8px 0px 0px 0px;text-align: center;z-index: 9;color: #FFF;">
+    <p style="font-size: 23px;padding: 0px;font-weight: 900;">Oferta Especial termina em: <span id="countdown">10:00</span> <i class="fa fa-clock"></i> </p>
+</div>
+
+
+<div class="container mt-4" style="margin-top:100px!important;">
+  <div class="row mt-4 ">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <div class="card p-3 mb-4"  style="border-radius: 10px;">
+        <div class="card-body">
+          <div class="row">
+            <div style="background-image: url('{{app_url}}/assets/product/{{product_image}}');border-radius: 10px;" class=" info_bk info_product col-md-12 pt-4 col-12 col-lg-4">
+              <div class="info_data pb-3">
+                <img width="170" src="{{app_url}}/assets/img/logo-site.png?v=1" alt="">
+                <h2 class="text-white" >{{product_name}}</h2>
+                <p class="text-white" >{{product_description}}</p>
+                <hr>
+                <h2 class="text-white" style="font-size: 2.5rem; font-weight: 700;">R$ {{product_price}}</h2>
+              </div>
+            </div>
+            <div class="form_product col-12 col-lg-8 col-md-12">
+              <div class="form-group mb-2">
+                <br>
+                <h3 style="font-size: 1.3rem;">Preencha os dados para finalizar sua compra</h3>
+              </div> 
+              <div class="row">
+                <div class="col-md-12" id="response_checkout" ></div>
+
+                <input type="hidden" id="product_id" name="" value="{{product_id}}">
+                <input type="hidden" id="type_pay" value="link">
+ 
+                <div class="col-12 col-lg-6 col-md-12">
+                  <div class="form-group">
+                    <label for="" style="font-weight: 800;" >Nome completo</label>
+                     <input id="nome_buy" type="text" class="form-control mb-2" placeholder="ex: Juliana Pereira" name="" value="">
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-md-12">
+                  <div class="form-group">
+                    <label for="" style="font-weight: 800;" >Seu melhor e-mail</label>
+                     <input id="email_buy" type="text" class="form-control mb-2" placeholder="ex: meu@emai.com" name="" value="">
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-md-12">
+                  <div class="form-group">
+                    <label for="" style="font-weight: 800;" >Telefone ou Whatsapp</label>
+                     <input id="number_buy" type="text" class="form-control mb-2" placeholder="ex: (12) 34567-8910" name="" value="">
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-md-12">
+                  <div class="form-group">
+                    <label for="" style="font-weight: 800;" >Seu CPF/CNPJ</label>
+                     <input id="doc_buy" type="text" class="form-control mb-2" placeholder="ex: 000.000.000-00" name="" value="">
+                  </div>
+                </div>
+
+      
+                <div class="text-center col-md-12 mt-4">
+                  <button id="buyCheckout" class="btn btn-lg btn-primary" style="width:100%;" type="button" name="button">Confirmar dados e Finalizar pedido</button>
+                  <p class="response_send"></p>
+                  <p>
+                    <img width="170" src="{{app_url}}/assets/img/cadeado.svg" alt="">
+                    <img width="200" src="{{app_url}}/assets/img/flags_mp.png" alt="">
+                  </p>
+                  <p class="response_send"></p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</div>

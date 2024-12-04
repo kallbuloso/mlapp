@@ -1,0 +1,7 @@
+Olá *{first_name}*, vimos que se interessou no produto {product_name}, mas ainda não efetuou sua compra.
+Caso tenha enfrentado algum problema estamos aqui para te ajudar.
+
+Vamos deixar o pix do pagamento logo abaixo caso você deseje continuar com a compra.
+%{pix_payload}%
+
+OBS: (Use a chave {pix_payload} dentro de % % 'porcentagem' para enviar o pix em uma mensagem separada)

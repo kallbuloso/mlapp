@@ -1,0 +1,138 @@
+*{
+  font-family:'Sofia Sans Semi Condensed', sans-serif, tahoma;
+}
+
+body {
+  max-width: 100vw;
+  background:#F7F6F3;
+}
+
+.info_product{
+  overflow: hidden;
+}
+.info_product p{
+  font-size: 13px;
+}
+.info_product .info_data{
+  z-index: 3!important;
+  position: relative;
+  color: #FFF;
+}
+.info_bk{
+  position: relative;
+  top: 0px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+  border-radius: 10px;
+  background-size: cover;
+}
+.form_product .form-group h3{
+  font-weight: 700;
+}
+
+*:focus {
+  outline: none;
+}
+.card{
+  box-shadow: 0 17px 40px 0 rgb(75 128 182 / 7%);
+  border-radius: 40px;
+}
+.input-group {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 82px;
+  border: 0;
+  background-color: #ececec;
+  border-bottom-left-radius: 41px;
+  border-bottom-right-radius: 41px;
+  border-top-left-radius: 41px;
+  border-top-right-radius: 0;
+  box-shadow: 0 17px 40px 0 rgba(75, 128, 182, 0.07);
+  margin-bottom: 22px;
+  position: relative;
+  font-weight: 500;
+  font-size: 17px;
+  color: #000000;
+  transition: opacity 0.2s ease-in-out, filter 0.2s ease-in-out,
+    box-shadow 0.1s ease-in-out;
+}
+
+.input-group:hover {
+  box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.077);
+}
+
+.input-group input {
+  position: absolute;
+  border: 0;
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0);
+  top: 0;
+  height: 65px;
+  width: 100%;
+  padding: 0 53px;
+  box-sizing: border-box;
+  z-index: 3;
+  display: block;
+  color: #141619;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Oxygen", sans-serif;
+  transition: top 0.1s ease-in-out;
+}
+
+.input-group input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  margin-top: 45px;
+  font-size: 13px;
+}
+
+.input-group input:focus,
+.input-group input:not(:placeholder-shown) {
+  top: 17px;
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 20px;
+  position: absolute;
+  border: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding: 0 53px;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in-out;
+  cursor: text;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  bottom: 20px;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.req-mark {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  right: 33px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 22px;
+  color: #e0e0e0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+
+
+
